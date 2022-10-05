@@ -64,8 +64,8 @@ def generate (name, network):
         prefix_string = 'mv'
         prefix_bytes = b'\x6f'
     elif network == 'mainnet':
-        prefix_string = '1'
-        prefix_bytes = b'\x00'
+        prefix_string = 'C'
+        prefix_bytes = b'\x1c'
     else:
         raise Exception('unknown network')
 
